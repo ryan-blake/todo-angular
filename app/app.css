@@ -1,0 +1,63 @@
+/* app css stylesheet */
+#taskList .strike {
+  text-decoration: line-through;
+}
+h1 {
+ width:520px;
+ text-transform: uppercase;
+ text-align:right;
+}
+
+#taskList .description {
+  font-family: "arial", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+
+}
+
+#taskList input {
+  margin-right: 10px;
+}
+
+#taskList button {
+  float: right;
+  font-size: 13px;
+  visibility: hidden;
+}
+
+#taskList .list-group-item:hover button {
+  visibility: visible;
+}
+
+#taskList .list-group-item:hover {
+  background-color:red;
+}
+
+#clearTasks {
+  float: right;
+}
+
+.task {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.task.ng-leave.ng-leave-active,
+.task.ng-enter {
+  height:0px;
+  padding 0px 15px;
+}
+
+.task.ng-leave, .task.ng-enter.ng-enter-active {
+  height: 50px;
+}
+@media (max-width:600px)  {
+  h1 {
+    width:360px;
+  }
+}
